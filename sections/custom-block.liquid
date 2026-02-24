@@ -1,0 +1,18 @@
+<section class="custom-app-block">
+  <h3>Special Offer</h3>
+  <p>Buy one, get one free this week!</p>
+  <button onclick="trackOrder()">Order Now</button>
+</section>
+
+<script>
+function trackOrder() {
+  fetch('https://example.com/api/orders', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ order_id: Math.floor(Math.random() * 10000) })
+  })
+  .then(res => res.json())
+  .then(data => console.log('Order sent:', data))
+  .catch(err => console.error('API Error:', err));
+}
+</script>

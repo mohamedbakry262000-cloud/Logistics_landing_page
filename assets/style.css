@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #004080; color: white; padding: 10px 20px; }
+header nav ul { list-style: none; display: flex; gap: 15px; }
+header nav ul li a { color: white; text-decoration: none; }
+footer { background: #222; color: #ccc; text-align: center; padding: 15px; }
+.hero { text-align: center; padding: 50px 20px; background: #f0f0f0; }
+.custom-app-block { text-align: center; margin: 40px 0; padding: 20px; border: 2px dashed #004080; }
+.custom-app-block button { background: #004080; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+.custom-app-block button:hover { background: #0066cc; }
